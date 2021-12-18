@@ -34,7 +34,7 @@ const sequelize = new Sequelize("yourconnectionstring")
 export default NextAuth({
   // https://next-auth.js.org/providers/overview
   providers: [],
-  adapter: Sequelize(sequelize),
+  adapter: SequelizeAdapter(sequelize),
 })
 ```
 
